@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		682D46DF144C862500D3411E /* FTCoreTextStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D46DC144C862500D3411E /* FTCoreTextStyle.m */; };
 		684DBCAA13FD4DCF00776C6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684DBCA913FD4DCF00776C6D /* UIKit.framework */; };
 		684DBCAC13FD4DCF00776C6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684DBCAB13FD4DCF00776C6D /* Foundation.framework */; };
 		684DBCAE13FD4DCF00776C6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684DBCAD13FD4DCF00776C6D /* CoreGraphics.framework */; };
@@ -17,16 +16,44 @@
 		684DBCBD13FD4DCF00776C6D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 684DBCBB13FD4DCF00776C6D /* MainWindow.xib */; };
 		684DBCC513FD4E5E00776C6D /* articleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 684DBCC413FD4E5E00776C6D /* articleViewController.m */; };
 		684DBCD413FD526200776C6D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684DBCD313FD526200776C6D /* CoreText.framework */; };
-		68A16CB61510D9BB007B079A /* FTCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A16CB51510D9BB007B079A /* FTCoreTextView.m */; };
 		9346F4301459AEF500EFA449 /* giraffe.png in Resources */ = {isa = PBXBuildFile; fileRef = 9346F42E1459AEF500EFA449 /* giraffe.png */; };
 		9346F4311459AEF500EFA449 /* giraffe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9346F42F1459AEF500EFA449 /* giraffe@2x.png */; };
 		9346F4331459AF2200EFA449 /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9346F4321459AF2200EFA449 /* text.txt */; };
+		A065E1F2169DACF100B83B82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684DBCAB13FD4DCF00776C6D /* Foundation.framework */; };
+		A065E1FD169DAD2F00B83B82 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684DBCD313FD526200776C6D /* CoreText.framework */; };
+		A065E200169DAD5C00B83B82 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684DBCAD13FD4DCF00776C6D /* CoreGraphics.framework */; };
+		A0FEDF20169DAED100C7FB8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 684DBCA913FD4DCF00776C6D /* UIKit.framework */; };
+		A0FEDF25169DB04D00C7FB8F /* libFTCoreText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A065E1F1169DACF100B83B82 /* libFTCoreText.a */; };
+		A0FEDF26169DB05200C7FB8F /* FTCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68A16CB51510D9BB007B079A /* FTCoreTextView.m */; };
+		A0FEDF27169DB05200C7FB8F /* FTCoreTextStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 682D46DC144C862500D3411E /* FTCoreTextStyle.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0FEDF23169DB04800C7FB8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 684DBC9C13FD4DCF00776C6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A065E1F0169DACF100B83B82;
+			remoteInfo = FTCoreText;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A065E1EF169DACF100B83B82 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		682D46DB144C862500D3411E /* FTCoreTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTCoreTextStyle.h; path = classes/FTCoreTextStyle.h; sourceTree = "<group>"; };
 		682D46DC144C862500D3411E /* FTCoreTextStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTCoreTextStyle.m; path = classes/FTCoreTextStyle.m; sourceTree = "<group>"; };
-		684DBCA513FD4DCF00776C6D /* FTCoreText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTCoreText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		684DBCA513FD4DCF00776C6D /* FTCoreTextDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTCoreTextDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684DBCA913FD4DCF00776C6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		684DBCAB13FD4DCF00776C6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		684DBCAD13FD4DCF00776C6D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,6 +72,7 @@
 		9346F42E1459AEF500EFA449 /* giraffe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = giraffe.png; sourceTree = "<group>"; };
 		9346F42F1459AEF500EFA449 /* giraffe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "giraffe@2x.png"; sourceTree = "<group>"; };
 		9346F4321459AF2200EFA449 /* text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
+		A065E1F1169DACF100B83B82 /* libFTCoreText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFTCoreText.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +80,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FEDF25169DB04D00C7FB8F /* libFTCoreText.a in Frameworks */,
 				684DBCD413FD526200776C6D /* CoreText.framework in Frameworks */,
 				684DBCAA13FD4DCF00776C6D /* UIKit.framework in Frameworks */,
 				684DBCAC13FD4DCF00776C6D /* Foundation.framework in Frameworks */,
 				684DBCAE13FD4DCF00776C6D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A065E1EE169DACF100B83B82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FEDF20169DAED100C7FB8F /* UIKit.framework in Frameworks */,
+				A065E200169DAD5C00B83B82 /* CoreGraphics.framework in Frameworks */,
+				A065E1FD169DAD2F00B83B82 /* CoreText.framework in Frameworks */,
+				A065E1F2169DACF100B83B82 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +114,8 @@
 		684DBCA613FD4DCF00776C6D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				684DBCA513FD4DCF00776C6D /* FTCoreText.app */,
+				684DBCA513FD4DCF00776C6D /* FTCoreTextDemo.app */,
+				A065E1F1169DACF100B83B82 /* libFTCoreText.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,9 +173,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		684DBCA413FD4DCF00776C6D /* FTCoreText */ = {
+		684DBCA413FD4DCF00776C6D /* FTCoreTextDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 684DBCC013FD4DCF00776C6D /* Build configuration list for PBXNativeTarget "FTCoreText" */;
+			buildConfigurationList = 684DBCC013FD4DCF00776C6D /* Build configuration list for PBXNativeTarget "FTCoreTextDemo" */;
 			buildPhases = (
 				684DBCA113FD4DCF00776C6D /* Sources */,
 				684DBCA213FD4DCF00776C6D /* Frameworks */,
@@ -143,11 +184,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				A0FEDF24169DB04800C7FB8F /* PBXTargetDependency */,
+			);
+			name = FTCoreTextDemo;
+			productName = FTCoreText;
+			productReference = 684DBCA513FD4DCF00776C6D /* FTCoreTextDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A065E1F0169DACF100B83B82 /* FTCoreText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A065E1FA169DACF100B83B82 /* Build configuration list for PBXNativeTarget "FTCoreText" */;
+			buildPhases = (
+				A065E1ED169DACF100B83B82 /* Sources */,
+				A065E1EE169DACF100B83B82 /* Frameworks */,
+				A065E1EF169DACF100B83B82 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
 			);
 			name = FTCoreText;
 			productName = FTCoreText;
-			productReference = 684DBCA513FD4DCF00776C6D /* FTCoreText.app */;
-			productType = "com.apple.product-type.application";
+			productReference = A065E1F1169DACF100B83B82 /* libFTCoreText.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -169,7 +228,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				684DBCA413FD4DCF00776C6D /* FTCoreText */,
+				684DBCA413FD4DCF00776C6D /* FTCoreTextDemo */,
+				A065E1F0169DACF100B83B82 /* FTCoreText */,
 			);
 		};
 /* End PBXProject section */
@@ -197,12 +257,27 @@
 				684DBCB613FD4DCF00776C6D /* main.m in Sources */,
 				684DBCBA13FD4DCF00776C6D /* FTCoreTextAppDelegate.m in Sources */,
 				684DBCC513FD4E5E00776C6D /* articleViewController.m in Sources */,
-				682D46DF144C862500D3411E /* FTCoreTextStyle.m in Sources */,
-				68A16CB61510D9BB007B079A /* FTCoreTextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A065E1ED169DACF100B83B82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FEDF26169DB05200C7FB8F /* FTCoreTextView.m in Sources */,
+				A0FEDF27169DB05200C7FB8F /* FTCoreTextStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0FEDF24169DB04800C7FB8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A065E1F0169DACF100B83B82 /* FTCoreText */;
+			targetProxy = A0FEDF23169DB04800C7FB8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		684DBCB213FD4DCF00776C6D /* InfoPlist.strings */ = {
@@ -276,13 +351,14 @@
 		684DBCC113FD4DCF00776C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FTCoreText/FTCoreText-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "FTCoreText/FTCoreText-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -290,14 +366,56 @@
 		684DBCC213FD4DCF00776C6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FTCoreText/FTCoreText-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "FTCoreText/FTCoreText-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A065E1FB169DACF100B83B82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/FTCoreText.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTCoreText/FTCoreText-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A065E1FC169DACF100B83B82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/FTCoreText.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTCoreText/FTCoreText-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -313,11 +431,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		684DBCC013FD4DCF00776C6D /* Build configuration list for PBXNativeTarget "FTCoreText" */ = {
+		684DBCC013FD4DCF00776C6D /* Build configuration list for PBXNativeTarget "FTCoreTextDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				684DBCC113FD4DCF00776C6D /* Debug */,
 				684DBCC213FD4DCF00776C6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A065E1FA169DACF100B83B82 /* Build configuration list for PBXNativeTarget "FTCoreText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A065E1FB169DACF100B83B82 /* Debug */,
+				A065E1FC169DACF100B83B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

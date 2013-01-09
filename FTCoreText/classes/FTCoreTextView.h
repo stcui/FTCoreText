@@ -49,15 +49,15 @@ extern NSString * const FTCoreTextDataAttributes;
 	} _coreTextViewFlags;
 }
 
-@property (nonatomic, retain) NSString				*text;
-@property (nonatomic, retain) NSString				*processedString;
+@property (nonatomic, strong) NSString				*text;
+@property (nonatomic, strong) NSString				*processedString;
 @property (nonatomic, readonly) NSAttributedString	*attributedString;
 @property (nonatomic, assign) CGPathRef				path;
-@property (nonatomic, retain) NSMutableDictionary	*URLs;
-@property (nonatomic, retain) NSMutableArray		*images;
-@property (nonatomic, assign) id <FTCoreTextViewDelegate> delegate;
+@property (nonatomic, strong) NSMutableDictionary	*URLs;
+@property (nonatomic, strong) NSMutableArray		*images;
+@property (nonatomic, unsafe_unretained) id <FTCoreTextViewDelegate> delegate;
 //shadow is not yet part of a style. It's applied on the whole view	
-@property (nonatomic, retain) UIColor *shadowColor;
+@property (nonatomic, strong) UIColor *shadowColor;
 @property (nonatomic, assign) CGSize shadowOffset;
 
 /* Using this method, you then have to set the -text property to get any result */

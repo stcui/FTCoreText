@@ -42,19 +42,16 @@
 	imageStyle.name = FTCoreTextTagImage;
 	imageStyle.textAlignment = FTCoreTextAlignementCenter;
 	[result addObject:imageStyle];
-	[imageStyle release];	
 	
 	FTCoreTextStyle *firstLetterStyle = [FTCoreTextStyle new];
 	firstLetterStyle.name = @"firstLetter";
 	firstLetterStyle.font = [UIFont fontWithName:@"TimesNewRomanPS-BoldMT" size:30.f];
 	[result addObject:firstLetterStyle];
-	[firstLetterStyle release];
 	
 	FTCoreTextStyle *linkStyle = [defaultStyle copy];
 	linkStyle.name = FTCoreTextTagLink;
 	linkStyle.color = [UIColor orangeColor];
 	[result addObject:linkStyle];
-	[linkStyle release];
 	
 	FTCoreTextStyle *subtitleStyle = [FTCoreTextStyle styleWithName:@"subtitle"];
 	subtitleStyle.font = [UIFont fontWithName:@"TimesNewRomanPS-BoldMT" size:25.f];
@@ -68,26 +65,22 @@
 	bulletStyle.bulletColor = [UIColor orangeColor];
 	bulletStyle.bulletCharacter = @"❧";
 	[result addObject:bulletStyle];
-	[bulletStyle release];
     
     FTCoreTextStyle *italicStyle = [defaultStyle copy];
 	italicStyle.name = @"italic";
 	italicStyle.underlined = YES;
     italicStyle.font = [UIFont fontWithName:@"TimesNewRomanPS-ItalicMT" size:16.f];
 	[result addObject:italicStyle];
-	[italicStyle release];
     
     FTCoreTextStyle *boldStyle = [defaultStyle copy];
 	boldStyle.name = @"bold";
     boldStyle.font = [UIFont fontWithName:@"TimesNewRomanPS-BoldMT" size:16.f];
 	[result addObject:boldStyle];
-	[boldStyle release];
     
     FTCoreTextStyle *coloredStyle = [defaultStyle copy];
     [coloredStyle setName:@"colored"];
     [coloredStyle setColor:[UIColor redColor]];
 	[result addObject:coloredStyle];
-    [defaultStyle release];
     
     return  result;
 }
@@ -132,7 +125,7 @@
 	//add coretextview
     scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
 	scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    coreTextView = [[FTCoreTextView alloc] initWithFrame:CGRectMake(20, 20, 280, 0)];
+    coreTextView = [[FTCoreTextView alloc] initWithFrame:CGRectMake(20, 20, CGRectGetWidth(self.view.bounds) - 40, 0)];
 	coreTextView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     // set text
     [coreTextView setText:[self textForView]];
@@ -159,11 +152,5 @@
 	[scrollView setContentSize:CGSizeMake(CGRectGetWidth(scrollView.bounds), CGRectGetHeight(coreTextView.frame) + 40)];
 }
 
-- (void)dealloc
-{
-	[coreTextView release];
-	[scrollView release];
-	[super dealloc];
-}
 
 @end
